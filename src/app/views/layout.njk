@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        {% block head %}
+            <title>Henryque rdgs</title>
+        {% endblock %}
+
+        <link rel='stylesheet' href='/css/styles.css'>
+
+    </head>
+
+    <body>
+        <header>
+            <div class="links">
+                <a href="/">Sobre</a>
+                <a href="/portfolio">Classes</a>
+            </div>
+
+        </header>
+
+        {% block content %}{% endblock %}
+
+    </body>
+
+    {% include 'pages/footer.njk'%}
+
+</html>
